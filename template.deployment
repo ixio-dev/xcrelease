@@ -1,0 +1,30 @@
+# .deployment file template
+#
+# This file contains configuration parameters for xcrelease
+# Copy this template to your project root as ".deployment"
+# Optional settings are commented out
+
+#
+# Project Settings:
+#
+APP_NAME=MyApp
+# If you need to name the release package different from the app
+# ZIP_NAME=myapp
+ARCHIVE_FOLDER=./archives
+RELEASE_FOLDER=./releases
+# If you want to upload the sparkle appcast and release packages via scp
+# SPARKLE_PATH=hostname:/var/www/sparkle
+
+#
+# Developer Settings:
+#
+APPLE_ID=email@example.com
+TEAM_ID=XXXXXXXXXX
+ACCOUNT_TOKEN=xxxx-xxxx-xxxx-xxxx
+
+#
+# Build Settings:
+#
+CONFIG=Release
+SCHEME=${APP_NAME}
+EXPORT_METHOD=developer-id
